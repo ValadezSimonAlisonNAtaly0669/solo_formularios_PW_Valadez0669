@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Alta de Pacientes - AnamCara</title>
+</head>
+<body>
+
+<header>
+    <h1>Alta de Pacientes (Mascotas) - Hospital Veterinario AnamCara</h1>
+    <img width="250" align="center" src="anamcaraLogo.png">
+    <p>Por favor, llena todos los datos pedidos</p>
+</header>
+
+<main>
+    <div class="form-container">
+        <form action="altas_pacientes.html" method="POST">
+            <div class="form-group">
+                <label>Nombre de la Mascota:</label>
+                <input type="text" name="nombre_mascota" placeholder="Ej: Puchungis" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Especie:</label>
+                <input type="text" name="especie" placeholder="Ej: Perro, Gato, Ave" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Raza:</label>
+                <input type="text" name="raza" placeholder="Ej: Husky, Siamés, Mestizo" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Edad:</label>
+                <input type="text" name="edad" placeholder="Ej: 3 años, 5 meses" required>
+            </div>
+           
+            <div class="form-group">
+                <label>Género / Sexo:</label>
+                <input type="text" name="genero" placeholder="Ej: Macho / Hembra" required>
+            </div>
+       
+            <div class="form-group">
+                <label>ID o Nombre del Dueño:</label>
+                <input type="text" name="id_dueno" placeholder="Ej: Valadez Simon Alison" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Registrar Paciente</button>
+        </form>
+    </div>
+
+    <a href="index.html" class="btn-back">Volver al Inicio</a>
+</main>
+
+<footer>
+    <p>Valadez Simon Alison Nataly - Programación</p>
+    <p>24308051280669 - 4-I</p>
+</footer>
+
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Rubik", sans-serif;
+        background-color: #fffbde;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    header {
+        background-color: rgb(255, 250, 217);
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(245, 221, 39, 0.8);
+    }
+
+    h1 {
+        color: #423f2c;
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 40px 20px;
+        flex: 1;
+    }
+
+    .form-container {
+        max-width: 500px;
+        width: 100%;
+        background: white;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(245, 228, 242, 0.7);
+        border-top: 6px solid #d1cfa9;
+    }
+
+    .form-group {
+        margin-bottom: 22px;
+    }
+   
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #555;
+        font-size: 14px;
+    }
+   
+    input[type="text"], input[type="number"], input[type="date"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #f2ecc4;
+        border-radius: 6px;
+        font-family: "Rubik", sans-serif;
+        font-size: 14px;
+        background-color:#fffef5;
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #c2bea3;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(202, 158, 195, 0.4);
+    }
+
+    .btn-submit {
+        background-color: #c2bea3;
+        color: white;
+        border: none;
+        padding: 14px 15px;
+        width: 100%;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: "Rubik", sans-serif;
+        margin-top: 10px;
+    }
+
+    .btn-submit:hover {
+        background-color: #b0aa86;
+    }
+
+    .btn-back {
+        display: inline-block;
+        text-align: center;
+        margin-top: 25px;
+        color: #888;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .btn-back:hover {
+        color:#b0aa86;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #f0eee6;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 13px;
+        color: #776a78;
+    }
+
+    footer p {
+        margin: 4px 0;
+        font-family: 'Rubik', sans-serif;
+    }
+</style>
+</html>
